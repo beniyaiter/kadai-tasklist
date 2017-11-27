@@ -16,7 +16,13 @@
                     {!! Form::label('status', 'タスクの状況') !!}
                     {!! Form::select('status', ['未着手' => '未着手', '進行中' => '進行中', '完了' => '完了' ], null, ['class' => 'form-control']) !!}
                 </div>
-                    {!! Form::submit('登録', ['class' => 'btn btn-primary']) !!}
+                    <!--{!! Form::submit('登録', ['class' => 'btn btn-primary glyphicon glyphicon-pencil']) !!}-->
+                    
+                    {!! Form::button('登録', array(
+                        'type' => 'submit',
+                        'class'=> 'btn btn-primary glyphicon glyphicon-pencil'
+                    )) !!}
+                    
             
             {!! Form::close() !!}
         </div>
